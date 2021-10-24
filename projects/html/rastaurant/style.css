@@ -1,0 +1,362 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { height: 100% }
+body {
+    font-family: 'roboto';
+    color: aliceblue;
+}
+a{
+    transition: .5s;
+}
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.header-area{
+    width: 100%;
+    position: relative;
+    z-index: 9999;
+}
+.header-area:after,.logo img,.mainmenu ul.nav.navbar-nav li a,.social-links{
+    transition: .4s;
+}
+ul.nav {
+  margin-right: 30px;
+}
+.is-sticky .header-area:after{
+    position: absolute;
+    content: "";
+    background-color: black;
+    opacity: .5;
+    color: #fff;
+    width: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.logo img{
+    height: 90px;
+}
+.is-sticky .logo img{
+    height: 70px;
+    padding: 8px;
+}
+.top-area{
+    position: relative;
+}
+.top-area-bg{
+    background: url(img/header-bg.jpg);
+    background-size: cover;
+    height: 100%;
+    left: 0;
+    position:absolute;
+    top: 0;
+    width: 100%;
+    content: "";
+    z-index:-2;
+}
+
+.mainmenu ul.nav.navbar-nav{
+    float: none;
+    font-size: 20px;
+    text-align: right;
+}
+.mainmenu ul.nav.navbar-nav li{
+    display: inline-block;
+    float: none;
+    position: relative;
+}
+.mainmenu ul.nav.navbar-nav li a{
+    color: #fff;
+    padding: 40px 15px;
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li a{
+    padding: 25px 15px;
+}
+<!--checked-->
+
+
+.mainmenu ul.nav.navbar-nav li a:focus{
+  background-color: none;
+}
+.mainmenu ul.nav.navbar-nav li:hover a{
+  background-color: none;
+}
+
+
+.mainmenu ul.nav.navbar-nav li.active::before{
+    background: #c8c5ba none repeat scroll 0 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+.is-sticky .mainmenu ul.nav.navbar-nav li.active a{
+    color: #cc9900;
+}
+.social-links{
+    position: absolute;
+    right: 0;
+    top: 37px;
+}
+.is-sticky .social-links{
+    top: 21px;
+}
+
+.social-links a{
+    color: #d8d13d;
+    display: inline-block;
+    font-size: 20px;
+    padding-left: 5px;
+}
+.section-padding{
+    padding: 80px 0;
+}
+.header-text h2{
+    background: url(img/divider.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 40px;
+    
+}
+.btn-filled{
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 6px 10px;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 1;
+    font-weight: 700;
+}
+
+.btn-filled:after, .igredients-text:after, .testimonial-list:after{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background-color: black;
+    opacity: .5;
+    z-index: -1;
+}
+.btn-filled.yellow-color-btn:after{
+    background-color: #D2BAB2;
+}
+.header-text{
+    padding: 100px 0;
+}
+
+.mainmenu{
+    padding-right: 80px;
+    position: relative;
+}
+
+.about-area,.food-menu-area{
+    background-image: url(img/menu-bg.png);
+    color: black;
+}
+.section-title{
+    color: #cc9900;
+    background-image: url(img/menu_divider.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+}
+.section-title.section-title-white{
+    background-image: url(img/testimonial-devider.png); 
+    color: aliceblue;
+}
+
+.section-title.section-title-white-small{
+    background-image: url(img/footer-divider.png); 
+    color: aliceblue;
+}
+.igredients-area{
+    position: relative;
+    
+}
+
+.parallax-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/element-bg.jpg) no-repeat fixed 0 0; 
+}
+.parallax-bg-2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(img/testimonial-bg.jpg) no-repeat fixed 0 0;
+}
+.igredients-bg{   
+}
+.igredients-text{
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+}
+.igredients-text p{
+    margin-bottom: 35px;
+}
+
+.food-menu-area{
+    color: black;
+    
+}
+.single-food-menu-item{
+    padding-top: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.single-food-menu-item h4{
+    color: #cc9900;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cc9900;
+}
+/*
+.single-food-menu-item h4:after{
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #cc9900;
+}
+*/
+    
+.single-food-menu-item h4 span{
+        float: right;
+    }
+
+.single-food-menu-item.special{
+    position: relative;
+    border: 1px solid #cc9900;
+    padding-top: 0px;
+    margin-top: 30px;
+}
+.single-food-menu-item.special:after{
+    position: absolute;
+    content: "Special";
+    right: -1px;
+    top: -23px;
+    background-color: #cc9900;
+    color: white;
+    padding: 1px 8px;
+    
+}
+.testimonial-area{
+    position: relative;
+}
+
+.testimonial-list{
+    position: relative;
+    z-index: 1;
+    font-size: 22px;
+    padding: 50px;
+   
+}
+.testimonial-list p{
+    line-height: 35px;
+}
+.testimonial-list p.testimonial-author{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+.contact-us-area{
+    color: black;
+}
+.contact-text, .contact-form{
+    padding: 0 60px;
+}
+.contact-form label{
+    color: #cc9900;
+    display: block;
+    padding-top: 20px;
+}
+.contact-form input{
+   
+}
+.footer{
+    background-color: black;
+}
+
+.border-box{
+    border: 1px solid #ddd;
+    padding: 6px;
+    transition: .5s;
+    width: 100%;
+}
+.border-box:focus{
+    border-color: #cc9900;
+}
+.book-now{
+    margin-top: 30px;
+    background-color: #cc9900;
+    padding: 5px 40px;
+    border: none;
+    color: aliceblue;
+    font-weight: 700;
+    transition: .5s;
+}
+.book-now:hover{
+    background-color: black;
+}
+.footer-social-icon a{
+    display: inline-block; 
+    padding-right: 5px;
+    color: #fff;
+}
+.footer-social-icon a:hover{
+    color: #cc9900;
+}
+
+
+
+
