@@ -1,0 +1,49 @@
+
+.boxed-btn,
+input[type=submit],
+button[type=submit],
+.slicknav_btn,
+.slicknav_nav .slicknav_row:hover, 
+.slicknav_nav a:hover,
+.cse-study-wrapper,
+.owl-dots div.active,
+.mainmenu li:hover li:hover > a,
+.hero-form input[type=submit], .owl-dots div.active, .website-checker-form input[type="submit"], .active .testimonial-text, .testimonial-text:after{
+    background-color: #24d5a1;
+}
+
+
+
+.mainmenu li:hover > a,
+.menu-cta span,
+.single-service-item:hover .service-readmore-btn,
+.single-service-item:hover i,
+.single-service-item:hover h4,
+.footer-wid ul li:hover a,
+.social-links a:hover,
+.social-links a:hover i,
+.pricing-count,
+.tesimonial-content span, .single-pricing-box:hover h4, .single-pricing-box:hover p, .single-blog-item .service-readmore-btn, .video-play-btn, .footer-bottom-3 ul li:hover a, .inline-btn, .loademore-btn, .theme-4 .footer-wid ul li:hover a, .single-service-item:hover .service-readmore-btn, .single-service-item:hover i, .single-service-item:hover h4, .social-links a:hover, .social-links a:hover i, .footer-wid ul li:hover a, .site-footer.theme-4 .social-links a:hover i, .loademore-btn, .loademore-btn i{
+    color: #24d5a1;
+}
+.single-service-item:hover,
+.single-pricing-box:hover,
+.single-pricing-box:hover .pricing-heading{
+    border-color: #24d5a1;
+}
+
+.theme-green .cse-study-wrapper {
+    background-color: rgba(36, 213, 161, 0.85);
+}
+
+/*
+.cse-study-overlay {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    -webkit-transition: .3s;
+    transition: .3s;
+    background: #24d5a1;
+    background: -webkit-linear-gradient(#24d5a1 0%, #8af2d3 100%);
+    background: linear-gradient(#24d5a1 0%, #8af2d3 100%);
+    -webkit-filter: progid: DImageTransform.Microsoft.gradient( startColorstr='#24d5a1', endColorstr='#8af2d3', GradientType=0);
+    filter: progid: DImageTransform.Microsoft.gradient( startColorstr='#24d5a1', endColorstr='#8af2d3', GradientType=0);
+}*/
