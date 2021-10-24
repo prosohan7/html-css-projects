@@ -1,0 +1,265 @@
+/* Base CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { height: 100% }
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+img{
+    max-width: 100%;
+}
+.top-area{
+    position: relative;
+}
+.header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.logo{
+    margin-top: 10px;
+}
+.contact{
+    line-height: 77px;
+}
+.contact p{
+    color: #fff;
+    font-size: 11px;
+}
+.contact p i{
+    margin-right: 10px;
+    margin-left: 20px;
+}
+.contact p i:first-child{
+    margin-left: 0px;
+}
+.menu{
+    margin-top: 26px;
+}
+.menu ul#nav{
+    list-style: none;
+    text-align: right;
+    margin-right: 10px;
+}
+.menu ul#nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.menu ul#nav li a {
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    color: #222;
+    
+}
+.slider-area{
+    height: 600px;
+    overflow: hidden;
+}
+.slide{}
+
+
+.owl-dots{
+    position: absolute;
+    bottom:30px;
+    left: 15%;
+    margin-left: -5px; 
+    transform: rotate(-6deg);
+}
+.owl-dots div{
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.owl-dots div span {
+    display: inline-block;
+    background-color: #382934;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    
+
+}
+.owl-dots div.owl-dot.active span{
+    background-color: red;
+}
+.section-rotate{
+    position: relative;
+}
+.features-area{
+   
+    background: url(img/pattern.jpg) repeat scroll 0 0;
+    text-align: center;
+    padding-bottom: 100px;
+    z-index: 999999999;
+}
+.features-area:before{
+    background: url(img/pattern.jpg) repeat scroll 0 0;
+    content: "";
+    position: absolute;
+    height: 175px;
+    width: 110%;
+    left: 0;
+    top: -107px;
+    transform: rotate(-6deg);
+    
+}
+.features-area:after,.awesome-client-area:after{
+    background: url(img/pattern.jpg) repeat scroll 0 0;
+    content: "";
+    position: absolute;
+    height: 175px;
+    width: 110%;
+    left: -12px;
+    bottom: -99px;
+    transform: rotate(-6deg); 
+    z-index: 9;
+    
+}
+.section-title{
+    position: relative;
+}
+.section-title:before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    border: 1px solid #222;
+    width: 100%;
+    text-align: center;
+    
+}
+.section-title h3{
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 30px;
+    
+}
+.s-feature{}
+.s-feature h4{}
+.s-feature p{}
+
+.image-gallery-area{
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #222;
+    z-index: 1;
+    
+    
+    
+}
+.image-gallery-area:after{
+    background: #222;
+    content: "";
+    position: absolute;
+    height: 175px;
+    width: 110%;
+    left: -12px;
+    bottom: -60px;
+    transform: rotate(-6deg); 
+    z-index: 9;
+}
+
+
+.image-cat{}
+.image-cat ul{
+    list-style: none;
+    text-align: right;
+    
+}
+.image-cat ul li{
+    display: inline-block;
+    padding: 15px; 
+}
+.mix{
+    margin-bottom: 30px;
+}
+
+.items .mix{
+    display: none;
+}
+
+.awesome-client-area{
+    background: url(img/pattern.jpg) repeat scroll 0 0;
+    padding-bottom: 150px;
+    padding-top: 150px;
+    z-index: -1;
+    
+}
+.uncle-image{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 350px;
+    padding: 78px;
+    
+}
+.uncle-img{
+    width: 200px;
+    border: 2px solid #222;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transform: rotate(-6deg) skewY(-25deg) rotate(6deg);
+}
+
+.uncle-img img{
+    transform: rotate(40deg) skewY(20deg) rotate(-6deg) scale(1.6) translate(-2px, 6px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
