@@ -1,0 +1,537 @@
+/* Base CSS */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+html,
+body { height: 100% }
+body {
+    font-family: 'roboto';
+
+}
+a{
+    transition: 0.3s;
+}
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.navbar.navbar-inverse{
+    padding: 8px 0px;
+}
+.header-area{
+}
+.header-area .navbar{
+    margin-bottom: 0px;
+}
+.breaking-news-area{}
+.breaking-news{
+    background-color:#f3f3f3;
+    position: relative;
+}
+.breaking-news marquee a{
+    color: black;
+}
+.breaking-news * {
+    float: left;
+}
+.breaking-news h4{
+    background-color: #e75757;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 0px;
+    padding: 12px 0px;
+    text-align: center;
+    width: 150px;
+    position: relative;
+}
+.breaking-news h4:after{
+    content: "";
+    width: 0px;
+    height: 0px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #e75757;
+    top: 50%;
+    right: -18px;
+    margin-top: -10px;
+    position: absolute;
+}
+.breaking-news marquee{
+    width: calc(100% - 150px);
+    padding: 9.5px 60px 0px 0px;
+}
+.social-icon-top{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    text-align: center;
+    
+}
+.social-icon-top a{
+    background-color: #eee;
+    float: left;
+    border-right: 1px solid #fff;
+    text-align: center;
+    padding: 18px 13px;
+    font-size: 17px;
+}
+.social-icon-top a:hover{
+    background-color: #0d7fed;
+    color: #fff;
+}
+.social-icon-top a i{
+    line-height: 3px;
+    color: rgb(178, 178, 178);
+}
+.social-icon-top a:hover i{
+    color: #fff;
+}
+.post{
+    position: relative;
+    border-right: 1px solid #f2f2f2;
+}
+.slider .post{
+    height: 300px;
+}
+.post-text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    
+    z-index: 1;
+    padding: 20px;
+}
+.post-text h3{
+    font-size: 13px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 20px;
+    line-height: 22px;
+}
+.post-text:before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background: linear-gradient(rgba(255, 255, 255, 0.05) ,rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.82), black);
+}
+
+.post-meta{
+    overflow: hidden;
+    color: #ddd;
+    font-size: 10px;
+}
+.post-meta p{
+    display: inline;
+}
+.post-meta p:last-child{
+    float: right;
+}
+/*Slider owl-carousel*/
+.slider .owl-dots{
+    text-align: right;
+    margin-left: -5px;
+}
+.slider .owl-dots div.owl-dot{
+    width: 15px;
+    height: 3px;
+    background-color: #ddd;
+    display: inline-block;
+    margin-left: 5px;
+}
+.slider .owl-dots div.owl-dot.active{
+    background-color: red;
+}
+/* /Sliderowl-carousel*/
+
+/* /  posts-carousel*/
+.carousel-post .owl-dots, .slider-posts .owl-nav{
+    position: absolute;
+    top: -60px;
+    right: -15px;
+    background: #fff;
+    font-size: 20px;
+}
+.carousel-post .owl-dots div.owl-dot{
+    width: 8px;
+    height: 8px;
+    background-color: #ddd;
+    display: inline-block;
+    margin-left: 5px;
+    border-radius: 50%;
+}
+.carousel-post .owl-dots div.owl-dot.active{
+    background-color: black;
+}
+/* Slider-posts*/
+.slider-posts .owl-nav{
+   
+}
+.slider-posts .owl-nav div{
+    display: inline;
+}
+
+.content-area{
+   
+}
+
+.content-title{
+    font-size: 19px;
+    position: relative;
+    
+}
+
+.content{
+    margin: 40px 0px;
+    position: relative;
+}
+.content-title:after{
+    background: url(img/pattern-2.jpg) repeat scroll 0 0;
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    margin-top: -8px;
+    z-index: -1;    
+}
+.content-title span{
+    background-color: #fff;
+    display: inline-block;
+    padding: 0px 15px 0px 0px;
+}
+.content-body{
+    box-shadow: 0 0 5px 0 #ddd;
+    border-top: 2px solid #000;
+    padding: 15px 15px 0;
+    padding-bottom: 15px;
+}
+.first-colm .content-body{
+    padding-bottom: 0px;
+}
+.content-body .post{
+    border-right: 0px; 
+    overflow: hidden;
+}
+.latest-post .post-list{
+    margin-left: -15px;
+}
+.latest-post .post{
+    margin-left: 15px;
+    width: calc(50% - 15px);
+    float: left;
+    border-right: 0px;
+    margin-bottom: 15px;
+}
+.latest-post .post img{
+    width: 100%;
+}
+a.post-links{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+a.post-links:last-child{
+    border-bottom: none;
+}
+.post-links img{
+    width: 30%;
+    float: left;
+    margin-right: 15px;
+}
+.post-links h3{
+    color: #3c3c3c;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.post-icon p{
+    color: #c9c9c9;
+    font-size: 12px;
+}
+.post-icon i, .post-meta i{
+    margin-right: 5px;
+    color: #c9c9c9;
+    display: inline-block;
+    font-size: 12px;
+}
+.carousel-post h3, .poll h3{
+    font-size: 14px;
+    margin: 10px auto;
+    line-height: 22px;
+}
+.poll p{
+    transition: .3s;
+}
+.poll p:hover{
+    color: deepskyblue;
+}
+.middle-sidebar{}
+.news-in-pic .post img, .entertainment .post img{
+    width: 100%;
+}
+.news-in-pic a{
+    display: block;
+}
+.news-pic-thumb img{
+    margin-bottom: 15px;
+}
+.site-footer{
+    background-color: black;
+    color: #ddd;
+    padding: 30px;
+}
+.footer-top-area{}
+.footer-wid .post-links h3, .footer-wid .post-links h3{
+    color: #ddd;
+    font-size: 13px;
+}
+.footer-wid{}
+.footer-wid a{
+    border-bottom: none;
+}
+.footer-logo{}
+.footer-wid-title{}
+.other-links{}
+.other-links ul{
+    list-style: none;
+    text-align: right;
+    margin-right: -20px;
+}
+.other-links ul li{
+    display: inline;
+    margin-right: 20px;
+}
+.other-links ul li a{
+    display: inline-block;
+    color: #ddd;
+    font-weight: 700;
+}
+.tags{
+    padding-bottom: 10px;
+}
+.tags ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.tags ul li{
+    display: inline;
+}
+.tags ul li a{
+    color: #fff;
+    background-color: #3c3c3c;
+    padding: 8px 15px;
+    font-weight: 700;
+    line-height: 37px;
+    border: none;
+}
+
+.newslatter-form{
+    
+}
+.newslatter-form input, .login-form input{
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fbfbfb;
+    font-size: 11px;
+    font-weight: 700;
+    color: #8d8d8d;
+    width: 100%;
+}
+.newslatter-form h3{
+    color: #676767;
+    font-size: 13px;
+    
+}
+.vote, input.log-in{
+    border: none;
+    background-color: #3c3c3c;
+    padding: 6px 15px;
+    color: #fff;
+    font-weight: 700;
+    transition: .3s;
+}
+a.vote{
+    padding: 8px 16px;
+}
+.tags ul li:hover a, .vote:hover, input.log-in:hover{
+    color: #fff;
+    background-color: deepskyblue;
+}
+.social-icon-right{
+    margin: 35px 0px;
+}
+.social-icon-right ul{
+    list-style: none;
+    padding: 0;
+}
+.social-icon-right ul li {
+  display: inline-block;
+  margin-left: 3px;
+  width: 31%;
+  text-align: center;
+    padding-bottom: 4px;
+}
+.social-icon-right ul li.facebook{
+    background-color: #0e5ca8;
+}
+.social-icon-right ul li.twitter{
+    background-color: deepskyblue;
+}
+.social-icon-right ul li.youtube{
+    background-color: red;
+}
+.social-icon-right ul li a{
+    color: #fff;
+    font-size: 11px;
+    line-height: 4px;
+}
+.social-icon-right ul li a i{
+    font-size: 20px;
+    color: #fff;
+    padding: 9px 14px;
+    background-color: rgba(0, 0, 0, 0.29);
+    border-radius: 50%;
+    margin: 17px 0px;
+}
+.social-icon-right ul li span{
+    display: block;
+}
+.big-ads{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.small-ads{
+    margin-left: -7px;
+}
+.small-ads img{
+    width: 47%;
+    margin-left: 7px;
+    float: left;
+}
+.login-form input{
+    margin-bottom: 10px;
+}
+.login-form a{
+    font-size: 12px;
+    color: inherit;
+    font-weight: 700;
+}
+.archive{
+    background-color: #eee;
+    
+}
+.archive ul{
+    padding: 0;
+    list-style: none;
+    margin-left: 5px;
+    
+}
+.archive ul li{
+    width: 12%;
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0px;
+}
+.archive ul li a{
+    color: #333;
+    font-weight: 700;
+    display: block;
+}
+.archive ul li:hover a{
+    color: deepskyblue;
+}
+.archive ul li.active{
+    background-color: deepskyblue;
+}
+h3.month{
+    display: block;
+    background-color: black;
+    color: #fff;
+    font-size: 14px;
+    padding: 7px 0;
+    text-align: center;
+}
+h3.like-us-heading{
+    font-size: 13px;
+    color: dimgray;
+    display: block;
+    background-color: #eee;
+    padding: 5px;
+}
+.content-body.no-padding{
+    padding: 0px;
+    margin: 5px;
+    font-size: 12px;
+}
+.like-us-box{
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.like-us-box p{
+    margin-top: 10px;
+}
+.recent-comments h3{
+    margin: 0px;
+}
+.recent-comments p{
+    color: #696969;
+    font-size: 12px;
+}
+
+.recent-comments p span{
+    color: #bbb;
+    display: block;
+}
+.ads-bottom{
+    padding: 0 50px;
+}
+.ads-bottom img{
+    width: 460px;
+    height: 60px;
+}
+.video-widget{
+    height: 170px;
+}
+
+
+
+
+
+
+
+
+
