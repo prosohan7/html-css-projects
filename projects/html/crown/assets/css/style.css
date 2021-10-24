@@ -1,0 +1,292 @@
+/* Default CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+ .alignleft {
+     float: left;
+     margin-right: 15px;
+}
+ .alignright {
+     float: right;
+     margin-left: 15px;
+}
+ .aligncenter {
+     display: block;
+     margin: 0 auto 15px;
+}
+ a{
+     color: #222;
+     -webkit-transition: .3s;
+     transition: .3s;
+}
+ a:focus {
+     outline: 0 solid; 
+}
+ img {
+     max-width: 100%;
+     height: auto;
+}
+ h1, h2, h3, h4, h5, h6 {
+     margin: 0 0 15px;
+     font-weight: 700;
+}
+ h3{
+     font-size: 22px;
+}
+ a:hover {
+     text-decoration: none 
+}
+ ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+body {
+     font-family: "Montserrat", sans-serif;
+     font-size: 14px;
+     font-weight: 400;
+     line-height: 1.7;
+     overflow-x: hidden;
+     color: #555;
+}
+h1,h1,h3,h4,h5 {
+	color: #222;
+}
+.crown-section-padding{
+	padding: 90px 0;
+}
+.crown-section-title{
+	padding-bottom: 60px;
+}
+.crown-sub-title{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.title-description{
+	margin-top: 40px;
+    font-size: 16px;
+}
+/*background image css*/
+.slide-bg-1{
+    background-image: url(../img/slide-bg-1.jpg);
+}
+.services-thumb-bg-1{
+    background-image: url(../img/service-bg-1.jpg);
+}
+.services-thumb-bg-2{
+    background-image: url(../img/service-bg-1.jpg);
+}
+.services-thumb-bg-3{
+    background-image: url(../img/service-bg-1.jpg);
+}
+.some-text-bg{
+    background-image: url(../img/some-text-bg.jpg);
+}
+/*all button css*/
+.service-readmore-btn, input[type="submit"]{
+     background-color: #f4cb10;
+     padding: 8px 18px;
+     border-radius: 5px;
+     margin-top: 10px;
+     display: inline-block;
+     color: #fff;
+     border: none;
+}
+/*header area css*/
+.crown-header-top-area{
+	padding: 20px 0;
+}
+.crown-header-right-btn a{
+	background-color: #46be25;
+	padding: 15px;
+	color: #fff;
+	position: relative;
+	display: inline-block;
+}
+
+.crown-header-right-btn:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 62%;
+    z-index: 9;
+    margin-left: -1px;
+    margin-top: -9px;
+}
+.crown-header-right-btn a:last-child{
+	background-color: #637177;
+}
+.crown-header-right-btn a:before, .crown-header-right-btn a:after{
+	position: absolute;
+	content: "";
+	height: 5px;
+	width: 5px;
+	background-color: #fff;
+	top: 5px;
+	left: 5px;
+	border-radius: 50%;
+	opacity: .5;
+}
+.crown-header-right-btn a:after{
+    top: auto;
+    bottom: 5px;
+}
+.crown-header-right-btn a:last-child:after, .crown-header-right-btn a:last-child:before{
+    left: auto;;
+    right: 5px;
+}
+/*Main Menu CSS*/
+.crown-header-bottom-area {
+    background-color: #212628;
+}
+.crown-mainmenu ul li {
+    display:  inline;
+}
+.crown-mainmenu ul li a {
+    color:  #fff;
+    display:  inline-block;
+    padding:  25px 15px;
+}
+.header-search-form input{
+	border: 1px solid #999;
+    background-color: #333;
+    padding: 15px;
+    color: #fff;
+    margin-top: 9px;
+    border-radius: 3px;
+    width: 350px;
+}
+/*homepage slider css*/
+.single-slide-item{
+     background-size: cover;
+     background-position: center;
+     background-color: #ccc;
+     height: 580px;
+}
+ .slide-item-table{
+     display: table;
+     height: 100%;
+     width: 100%;
+}
+ .slide-item-tablecell{
+     display: table-cell;
+     vertical-align: middle;
+}
+.single-slide-item h1{
+    margin-bottom: 40px;
+}
+.single-slide-item p{
+    font-size: 16px;
+    color: #222;
+}
+/*featured area css*/
+.single-feature {
+     padding: 0 10px;
+}
+.single-feature h3 {
+     margin: 25px 0;
+}
+.single-feature-icon {
+     font-size: 60px;
+     color: #f4cb10;
+}
+/*service area css*/
+.gray-bg{
+    background-color: #f6f7fa;
+}
+ .single-service {
+     background-color: #fff;
+     padding: 15px;
+     box-shadow: 0 0 5px #ddd;
+     margin-bottom: 30px;
+}
+ .single-service h3 {
+     margin: 18px 0;
+}
+ .service-content{
+     padding: 5px;
+}
+ .single-box-thubm {
+     height: 240px;
+     background-size: cover;
+     background-color: #ddd;
+     background-position: center;
+}
+/*some text area css*/
+.some-text-area{
+    height: 300px;
+    background-size: cover;
+    position: relative;
+}
+.some-text-area:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #262b2d;
+    opacity: .7;
+}
+.some-text-bg h3{
+    font-weight: 400;
+    color: #fff;
+    margin-top: 100px;
+    line-height: 1.8;
+}
+.some-text-bg span{
+    color: #f4cb10;
+}
+/*testmonial area css*/
+.single-testimonial{
+
+}
+.testimonial-comment{
+    padding: 40px;
+    line-height: 2.0;
+    border: 1px solid #dfdfdf;
+}
+.testimonial-author{
+    margin-top: 40px;
+}
+.testimonial-author img{
+    float: left;
+    margin-right: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+/**/
+.speciality-tab{
+    border: 1px solid #dfdfdf;
+    line-height: 2.0;
+}
+.speciality-tab .tab-pane{
+    padding: 33px;
+}
+.speciality-tab .nav-tabs li.active a{
+    background-color: #f3f3f3;
+    display: inline-block;
+}
+.speciality-tab ul li p{
+    margin: 0;
+}
+.footer-top-area{
+    background-color: #222;
+    color: #cacaca; 
+}
+.footer-top-area a, .footer-top-area h3, .footer-bottom-area{
+    color: #cacaca;    
+}
+
+.footer-bottom-area {
+    background-color: #1d1d1d;
+    padding: 20px 0;
+}
+
+
