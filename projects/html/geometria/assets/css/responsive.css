@@ -1,0 +1,87 @@
+/* Medium Layout: 1280px. */
+@media only screen and (min-width: 992px) and (max-width: 1200px) { 
+  
+    
+}
+/* Tablet Layout: 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+ 
+    .sinlge-partner {
+    padding: 10px 2px;
+}
+    .team-member{
+        margin-bottom: 30px;
+    }
+        .geometria-content-block{
+        padding: 60px 0;
+    }
+  .geometria-vdo-area{
+       padding: 40px 0;
+    }
+    .single-step{
+        padding: 0 10px;
+    }
+    .geometria-title{
+        padding-bottom: 40px;
+    }
+
+}
+/* Mobile Layout: 320px. */
+@media only screen and (max-width: 767px) { 
+    .geometria-content-block{
+        padding: 60px 0;
+    }
+  .geometria-vdo-area{
+       padding: 35px 0;
+    }
+
+    .geometria-vdo-text{
+        padding-top: 15%;
+    }
+    .single-step{
+        padding: 15px;
+    }
+    .team-member{
+        margin-bottom: 20px;
+    }
+    .geometria-hero-area{
+        height: 450px;
+        background-position: center;
+    }
+    .geometria-title{
+        padding-bottom: 30px;
+    }
+    .hero-content h1 {
+    font-size: 30px;
+}
+    .hero-content {
+    line-height: 1.8;
+}
+    .geometria-hero-area a{
+        margin-top: 20px;
+    }
+       .logo {
+        background: #0f81f8;
+        border-radius: 41px;
+        padding: 10px 18px 15px;
+        left: 50%;
+        margin-left: -93px;
+           z-index: 99;
+    }
+    .hero-content h1 {
+    font-size: 22px;
+}
+    .hero-content {
+    margin-top: 80px;
+}
+    .show-menu {
+        right: 50%;
+        margin-right: -40px;
+        top: 35px;
+}
+    
+}
+/* Wide Mobile Layout: 480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+
+}
