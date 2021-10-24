@@ -1,0 +1,154 @@
+/*
+======================================
+======================================
+
+@File: Traffic Theme Styles
+
+* This file contains the styling for the actual theme, 
+this is the file you need to edit to change the look 
+of the theme.
+
+This files contents are outlined below
+======================================
+======================================
+    *** CSS Index ***
+    -----------------
+    ** - Input [All] + btn CSS
+    ** - Mainmenu Area CSS
+    ** - Hero Area  CSS
+    ** - Services Area  CSS
+    ** - CTA Area CSS
+    ** - Testimonial Area CSS
+    ** - Pricing Area  CSS
+    ** - Social Links  CSS
+=======================================
+*/
+
+/*** Default CSS ***/
+h3 {
+    font-size: 22px;
+}
+/*========================
+| Input [All] + btn CSS|
+=========================*/
+
+.boxed-btn,
+input[type="submit"],
+button[type="submit"] {
+    background-color: #24d5a1;
+}
+/*=====================
+|  Mainmenu Area CSS    |
+======================*/
+
+.mainmenu li:hover > a,
+.mainmenu ul li.active a,
+.footer-wid ul li:hover a {
+    color: #24d5a1;
+}
+.mainmenu li:hover li:hover > a {
+    background-color: #24d5a1;
+}
+.menu-cta span {
+    color: #24d5a1;
+}
+.slicknav_btn{
+    background-color: #24d5a1;
+}
+.slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover{
+    background-color: #24d5a1;
+}
+/*==============
+| Hero Area  CSS|
+================*/
+
+.hero-area {
+    background-image: url(../img/hero-bg-2.png);
+    background-color: #359af3;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    line-height: 1.8;
+    padding: 80px 0;
+}
+.hero-area h1 {
+    color: #fff;
+    font-size: 45px;
+    margin-top: 180px;
+}
+.owl-dots div.active {
+    background: #24d5a1;
+}
+.owl-dots {
+    margin-top: 0;
+}
+/*========================
+| Services Area  CSS|
+=========================*/
+
+.service-icon {
+    color: #2d9af7;
+    margin-bottom: 25px;
+}
+.service-icon i {
+    font-size: 45px;
+}
+/*========================
+| CTA Area CSS|
+=========================*/
+
+.cta-area.theme-4 h1,
+.cta-area.theme-5 h1,
+.broudcumb-area h1 {
+    font-weight: 700
+}
+/*========================
+| Testimonial Area CSS|
+=========================*/
+
+.testimonial-area {
+    padding-top: 70px;
+}
+.single-testimonial-item {
+    padding: 75px;
+}
+.tesimonial-content {
+    font-size: 18px;
+}
+/*========================
+| Pricing Area  CSS|
+=========================*/
+
+.single-pricing-box {
+    padding: 0;
+    border-color: #f3f3f3;
+}
+.single-pricing-box:hover {
+    border-color: #f3f3f3;
+}
+.pricing-heading {
+    background-color: #fbfbfb;
+    border-bottom: 0;
+    padding: 30px 0;
+}
+.single-pricing-box:hover h4,
+.single-pricing-box:hover p {
+    color: #22bffb;
+}
+.pricing-count {
+    color: #22bffb;
+    color: -moz-linear-gradient(#22bffb 0%, #4783e8 100%);
+    color: -webkit-linear-gradient(#22bffb 0%, #4783e8 100%);
+    color: -o-linear-gradient(#22bffb 0%, #4783e8 100%);
+    color: linear-gradient(#22bffb 0%, #4783e8 100%);
+    -webkit-filter: progid: DImageTransform.Microsoft.gradient( startColorstr='#22bffb', endColorstr='#4783e8', GradientType=0);
+    filter: progid: DImageTransform.Microsoft.gradient( startColorstr='#22bffb', endColorstr='#4783e8', GradientType=0);
+}
+/*========================
+| Social Links  CSS |
+=========================*/
+
+.social-links a:hover,
+.social-links a:hover i {
+    color: #24d5a1;
+}

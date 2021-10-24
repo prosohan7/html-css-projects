@@ -1,0 +1,94 @@
+/*
+======================================
+======================================
+
+@File: Traffic Theme Styles
+
+* This file contains the styling for the actual theme, 
+this is the file you need to edit to change the look 
+of the theme.
+
+This files contents are outlined below
+======================================
+======================================
+    *** CSS Index ***
+    -----------------
+    ** - Default CSS
+    ** - Mainmenu Area CSS
+    ** - Website Checker Form CSS
+    ** - Single Service CSS
+    ** - btn + input CSS
+======================================
+*/
+
+body {
+    line-height: 1.7;
+}
+html,
+body
+ {
+    height: 100%;
+}
+.single-carousel {
+    height: 300px;
+}
+/*===================
+| Mainmenu Area CSS|
+=====================*/
+.mainmenu li:hover > a {
+  color: #24d5a1;
+}
+.mainmenu ul li a {
+    color: #fff;
+}
+.mainmenu li:last-child ul {
+    left: auto;
+    right: 0;
+}
+.mainmenu li:hover li:hover > a {
+    background-color: #24d5a1;
+    color: #fff;
+}
+.menu-cta span {
+    color: #24d5a1;
+}
+.slicknav_btn{
+    background-color: #24d5a1;
+}
+.slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover{
+    background-color: #24d5a1;
+}
+/*========================
+| Website Checker Form CSS|
+=========================*/
+
+.website-checker-form input {
+    margin-right: 2%;
+    width: 26%;
+}
+.website-checker-form input[type="submit"] {
+    margin-right: 0;
+    width: 13%;
+}
+/*========================
+| Single Service CSS|
+=========================*/
+
+.single-service-item {
+    margin-bottom: 0;
+}
+.single-service-item:hover {
+    border-color: #06d6a0;
+}
+.single-service-item:hover h4,
+.single-service-item:hover i,
+.single-service-item:hover .service-readmore-btn {
+    color: #06d6a0;
+}
+/*=====================
+| btn + input CSS |
+======================*/
+
+.boxed-btn, input[type="submit"], button[type="submit"] {
+    background-color: #06d6a0;
+}

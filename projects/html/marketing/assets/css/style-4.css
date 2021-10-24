@@ -1,0 +1,190 @@
+/*
+======================================
+======================================
+
+@File: Traffic Theme Styles
+
+* This file contains the styling for the actual theme, 
+this is the file you need to edit to change the look 
+of the theme.
+
+This files contents are outlined below
+======================================
+======================================
+    *** CSS Index ***
+    -----------------
+    ** - Default CSS
+    ** - Header CSS
+    ** - Mainmenu CSS
+    ** - Hero Area CSS
+    ** - Single Slide CSS
+    ** - input + btn CSS
+    ** - Website Check Form CSS
+    ** - Pricing CSS
+    ** - Single Services CSS
+======================================
+*/
+
+body {
+    line-height: 1.7;
+}
+.section title h3{
+    font-size: 26px;
+}
+.about-traffic-area-4 h3, 
+.service-box-2 h4,  
+.feature-area h3, 
+.feature-area h4,
+.section-title h2{
+    font-weight: 700;
+}
+.single-carousel {
+    height: 300px;
+}
+/*===================
+| Header CSS|
+=====================*/
+
+.header-absulate {
+    top: 20px;
+}
+/*===================
+| Mainmenu CSS |
+=====================*/
+
+.mainmenu li:hover > a,
+.mainmenu ul li.active a,
+.footer-wid ul li:hover a {
+    color: #24d5a1;
+}
+.mainmenu li:hover li:hover > a {
+    background-color: #24d5a1;
+    color: #fff;
+}
+.menu-cta span {
+    color: #24d5a1;
+}
+.hero-green h3,
+.how-works-area h2 {
+    font-weight: 400;
+}
+.slicknav_btn{
+    background-color: #24d5a1;
+}
+.slicknav_nav .slicknav_row:hover, .slicknav_nav a:hover{
+    background-color: #24d5a1;
+}
+/*===================
+| Hero Area CSS|
+=====================*/
+
+.hero-form {
+    border: 1px solid #eaeaea;
+    box-shadow: 10px 10px 2px #f7f7f7;
+}
+/*===================
+| Single Slide CSS |
+=====================*/
+
+.single-slide-item {
+    position: relative;
+    height: 100%;
+}
+.single-slide-item:after {
+    background: #073b4c;
+    opacity: .3;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    height: 100%;
+}
+.single-slide-wrapper h2 {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 55px;
+}
+/*===================
+| input + btn CSS|
+=====================*/
+.boxed-btn,
+input[type="submit"],
+button[type="submit"] {
+    background-color: #06d6a0;
+    color: #fff;
+}
+.boxed-btn:hover,
+input[type="submit"]:hover,
+button[type="submit"]:hover {
+    background-color: #073b4c;
+}
+.cta-area .boxed-btn {
+    padding: 12px 46px;
+}
+/*===================
+| Website Check Form CSS|
+=====================*/
+
+.website-checker-form {
+    margin-top: 35px;
+}
+.website-checker-form input {
+    margin-right: 2%;
+    width: 26%;
+    border: none;
+}
+.website-checker-form input[type="submit"] {
+    margin-right: 0;
+    width: 13%;
+    background-color: #06d6a0;
+    padding: 10px;
+}
+.website-checker-form input[type="submit"]:hover, .video-play-btn:hover{
+     background-color: #073b4c;
+}
+.website-checker-form input,
+.search-form input {
+    background-color: #073b4c;
+    color: #fff;
+    border: none;
+}
+/*===================
+| Pricing CSS|
+=====================*/
+
+.single-pricing-box:hover,
+.single-pricing-box:hover .pricing-heading {
+    border-color: #06d6a0;
+}
+.pricing-count {
+    color: #06d6a0;
+}
+/*===================
+| Single Services CSS|
+=====================*/
+
+.single-service-item:hover .service-readmore-btn,
+.single-service-item:hover i,
+.single-service-item:hover h4,
+.social-links a:hover,
+.social-links a:hover i,
+.footer-wid ul li:hover a,
+.site-footer.theme-4 .social-links a:hover i,
+.loademore-btn,
+.loademore-btn i {
+    color: #06d6a0;
+}
+.single-service-item:hover {
+    border-color: #06d6a0;
+}
+.site-footer.theme-4 .social-links a i{
+    color: #fff;
+}
+.offcanvus-menu .social-links ul{
+    position: static;
+    padding: 0;
+}
+.offcanvus-menu .social-links ul li{
+    width: 48%;
+    display: inline-block;
+}
+.offcanvus-menu .social-links ul li a{
+    font-size: 15px;
+}
