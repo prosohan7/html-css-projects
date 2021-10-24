@@ -1,0 +1,863 @@
+/*
+======================================
+======================================
+
+@File: Industrial Theme Styles
+
+*** This file contains the styling for the actual theme, 
+this is the file you need to edit to change the look 
+of the theme.
+
+This files contents are outlined below
+======================================
+======================================
+    *** CSS Index ***
+    -----------------
+    ** - Default CSS
+    ** - Preloader & Scroll Top CSS 
+    ** - Background Image CSS 
+    ** - All btn CSS
+    ** - Header Area CSS
+    ** - Menu Area CSS
+    ** - Search box CSS
+    ** - Homepage Slider CSS
+    ** - Slider Area CSS
+    ** - Service Area CSS
+    ** - CTA area CSS
+    ** - About Area CSS
+    ** - Video CSS
+    ** - Service Area-2 CSS
+    ** - Our Works CSS
+    ** - Blog Area CSS
+    ** - Broudcrumb CSS 
+    ** - Pricing Area CSS
+    ** - Blog Area CSS
+    ** - Contact Area  CSS
+    ** - Footer CSS
+=======================================
+*/
+
+/* Default CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+
+ .alignleft {
+     float: left;
+     margin-right: 15px;
+}
+ .alignright {
+     float: right;
+     margin-left: 15px;
+}
+ .aligncenter {
+     display: block;
+     margin: 0 auto 15px;
+}
+ a, a:hover{
+     color: #222;
+     -webkit-transition: .3s;
+     transition: .3s;
+}
+ a:focus {
+     outline: 0 solid 
+}
+ img {
+     max-width: 100%;
+     height: auto;
+}
+ h1, h2, h3, h4, h5, h6 {
+     margin: 0 0 15px;
+     font-weight: 700;
+}
+ h3{
+     font-size: 22px;
+}
+ body {
+     font-family: "Montserrat", sans-serif;
+     font-size: 15px;
+     font-weight: 400;
+     line-height: 1.7;
+     overflow-x: hidden;
+}
+ a:hover {
+     text-decoration: none 
+}
+ ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+}
+ .industrial-section-padding{
+     padding: 90px 0;
+}
+ .industrial-section-padding.padding-bottom-0{
+     padding-bottom: 0;
+}
+ .section-title{
+     padding-bottom: 50px;
+     text-align: center;
+}
+ .sub-title{
+     text-transform: uppercase;
+     font-size: 13px;
+}
+ .gray-bg{
+     background-color: #fbfbfb;
+}
+ .spacer-60{
+     height: 60px;
+}
+ .spacer-30{
+     height: 30px 
+}
+ .padding-right-40{
+     padding-right: 40px;
+}
+ .padding-left-40{
+     padding-left: 40px;
+}
+
+/*================ Preloader CSS ==================*/
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.preloader-wrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #f7b349;
+    height: 100%;
+    width: 100%;
+    z-index: 99999999;
+}
+
+.preloader-wrap .spinner{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/*================ Scroll Top CSS ==================*/
+.gotoup {
+    display: none;
+    background-color: #46BE25;
+    bottom: 5px;
+    color: #222;
+    cursor: pointer;
+    font-size: 22px;
+    height: 35px;
+    line-height: 30px;
+    position: fixed;
+    right: 5px;
+    width: 35px;
+    z-index: 99999;
+}
+/*================ Background Image CSS ==================*/
+ .slide-bg-1{
+    background-image: url(../img/slide-bg-1.jpg);
+}
+ .slide-bg-2{
+    background-image: url(../img/slide-bg-2.jpg);
+}
+ .services-thumb-bg-1 {
+    background-image: url(../img/service-img-1.jpg);
+}
+ .services-thumb-bg-2 {
+    background-image: url(../img/service-img-2.jpg);
+}
+ .services-thumb-bg-3 {
+    background-image: url(../img/service-img-3.jpg);
+}
+ .video-bg{
+    background-image: url(../img/broudcrumb-bg-2.jpg);
+}
+ .single-project-bg-1 {
+    background-image: url(../img/single-work-1.jpg);
+}
+ .single-project-bg-2 {
+    background-image: url(../img/single-work-2.jpg);
+}
+ .single-project-bg-3 {
+    background-image: url(../img/single-work-3.jpg);
+}
+ .blog-thumb-bg-1{
+    background-image: url(../img/blog-thumb-bg-1.jpg);
+}
+ .blog-thumb-bg-2{
+    background-image: url(../img/blog-thumb-bg-2.jpg);
+}
+ .blog-thumb-bg-3{
+    background-image: url(../img/blog-thumb-bg-3.jpg);
+}
+ .broudcrumb-bg-1{
+    background-image: url(../img/broudcrumb-bg-1.jpg);
+}
+ .broudcrumb-bg-2{
+    background-image: url(../img/broudcrumb-bg-2.jpg);
+}
+ .broudcrumb-bg-3{
+    background-image: url(../img/broudcrumb-bg-3.jpg);
+}
+/*================ All btn CSS ==================*/
+ .industrial-btn{
+     background-color: #46be25;
+     color: #222;
+     display: inline-block;
+     padding: 15px 35px;
+     font-weight: 700;
+     text-transform: uppercase;
+     font-size: 14px;
+     border-radius: 30px;
+     border: 3px solid #46be25;
+}
+ .industrial-btn:hover{
+     color: #fff;
+     background-color: transparent;
+}
+ .service-readmore-btn, input[type="submit"]{
+     background-color: #46be25;
+     padding: 8px 18px;
+     border-radius: 5px;
+     margin-top: 10px;
+     display: inline-block;
+     color: #222;
+     border: none;
+}
+ .video-btn {
+     color: #fff;
+     display: inline-block;
+     background-color: #46be25;
+     border-radius: 50%;
+     height: 50px;
+     width: 50px;
+     padding: 12px 21px;
+     margin-top: 15px;
+}
+ .service-readmore-btn:hover, .video-btn:hover{
+     color: #fff;
+     background-color: #333;
+}
+ .load-more-btn {
+     display: inline-block;
+     background-color: #46be25;
+     padding: 10px 25px;
+     margin-top: 20px;
+}
+ .load-more-btn:hover{
+     background-color: #333;
+     color: #fff;
+}
+
+/*================ Header Area CSS ==================*/
+ .header-top-area {
+     background-color: #333;
+     color: #fff;
+     padding: 10px;
+}
+ .header-top-area a{
+     color: #fff;
+}
+ .header-top-left{
+     padding-top: 5px;
+}
+ .header-top-left a:hover{
+     color: #46be25;
+}
+ .header-top-right p{
+     background-color: #46be25;
+     display: inline-block;
+     padding: 5px 20px;
+     margin: 0;
+}
+ .header-bottom-area a{
+     color: #222;
+}
+ .logo{
+     margin-top: 10px;
+}
+ .seprator{
+     padding: 0 10px;
+}
+}
+/*================ Menu Area CSS ==================*/
+ .mainmenu {
+     position: relative;
+}
+ .mainmenu ul li {
+     display: inline-block;
+}
+ .mainmenu ul li a{
+     display: block;
+     padding: 30px 20px;
+     font-size: 14px;
+     font-weight: 700;
+     text-transform: uppercase;
+}
+ .mainmenu ul li:hover > a{
+     background: #f4f4f4;
+}
+/*-- Mega Menu --*/
+
+.mainmenu li.mega-menu {
+    position: static;
+}
+.mainmenu li ul {
+    position: absolute;
+    top: 90px;
+    left: auto;
+    background: #fff;
+    text-align: left;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: .3s;
+    transition: .3s;
+    padding: 10px;
+    box-shadow: 0 0 5px #999;
+    z-index: 9;
+}
+.mainmenu li:hover ul {
+    top: 83px;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+.mainmenu li ul li {
+    display: block;
+}
+.mainmenu li li a {
+    padding: 7px 15px;
+}
+.mainmenu li:hover li:hover > a {
+    background-color: #46be25;
+    color: #fff;
+}
+.mainmenu li.mega-menu ul {
+    width: 80%;
+    padding: 20px;
+    left: 0;
+}
+.mainmenu li.mega-menu ul ul {
+    position: relative;
+    left: auto;
+    top: auto;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    padding: 0;
+    width: auto;
+    z-index: 0;
+    box-shadow: 0 0 0;
+}
+.mainmenu li.mega-menu:hover ul {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+    z-index: 9;
+}
+.mainmenu li.mega-menu h5 {
+    padding-left: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+.menu-cta {
+    text-align: center;
+    position:  relative;
+}
+.menu-cta:before {
+    position:  absolute;
+    content:  "";
+    top: 0;
+    right: -20px;
+    height:  100%;
+    width:  2px;
+    background-color: #ddd;
+}*/
+.menu-cta h4 {
+    line-height: 29px;
+}
+
+/*-- Moblie Menu --*/
+.slicknav_menu{
+    display: none;
+    background-color: transparent;
+    width: 100%;
+    position: absolute;
+    right: 15px;
+    z-index: 9999;
+    top: 0;
+}
+.slicknav_btn{
+    float: none;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.slicknav_nav{
+    background-color: #333;
+    text-align: left;
+}
+.slicknav_nav ul{
+    margin-left: 10px;
+}
+.slicknav_menu h4, .slicknav_menu h5{
+    color: #fff;
+}
+.slicknav_menu h5{
+    margin: 0;
+    margin-top: 5px;
+}
+.slicknav_menu a{
+    color: #fff;
+}
+.slicknav_nav .boxed-btn{
+    display: inline-block;
+}
+/*========== Search box ============*/
+ .header-search-bar{
+     position: absolute;
+     top: 50%;
+     right: 0px;
+     margin-top: -20px;
+     z-index: 99999;
+}
+ .header-search-bar i{
+     display: inline-block;
+     position: absolute;
+     z-index: -1;
+     font-size: 14px;
+     top: 13px;
+     left: 15px;
+}
+ .header-search-bar input[type="search"] {
+     border: medium none;
+     cursor: pointer;
+     height: 40px;
+     padding: 5px 15px;
+     text-indent: -9999px;
+     -webkit-transition: all 0.2s ease 0s;
+     transition: all 0.2s ease 0s;
+     width: 40px;
+     background: none;
+}
+ .header-search-bar input[type="search"]:focus {
+     border: 1px solid #ddd;
+     text-indent: 0;
+     width: 200px;
+     background: #fff;
+     cursor: text;
+}
+/*================ Homepage Slider CSS ==================*/
+ .homepage-slides{
+}
+ .single-slide-item{
+     background-size: cover;
+     background-position: center;
+     background-color: #ccc;
+     height: 590px;
+     color: #fff;
+}
+ .slide-item-table{
+     display: table;
+     height: 100%;
+     width: 100%;
+}
+ .slide-item-tablecell{
+     display: table-cell;
+     vertical-align: middle;
+}
+ .slide-item-tablecell h2{
+     font-weight: 600;
+     font-size: 56px;
+}
+ .slide-item-tablecell p{
+     font-size: 22px;
+     font-weight: 500;
+     margin: 30px 0;
+}
+ .homepage-slides .owl-nav div{
+     left: 50px;
+     position: absolute;
+     top: 50%;
+     color: #fff;
+     font-size: 19px;
+     border: 2px solid;
+     width: 40px;
+     height: 40px;
+     text-align: center;
+     line-height: 35px;
+     margin-top: -20px;
+     opacity: .8;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+ .homepage-slides .owl-nav div:hover{
+     opacity: 1;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+ .homepage-slides .owl-nav .owl-next{
+     left: auto;
+     right: 50px;
+}
+/*================ Service Area CSS ==================*/
+ .service-icon {
+     font-size: 60px;
+     color: #46be25;
+}
+ .single-service-1 h3 {
+     margin: 25px 0;
+}
+ .single-service-1 {
+     padding: 0 10px;
+}
+/*================ CTA area CSS ==================*/
+ .cta-area{
+     padding: 40px 0;
+     background-color: #333;
+     color: #fff;
+}
+ .cta-area h2{
+     margin: 10px 0;
+     font-weight: 400;
+}
+/*================ About Area CSS ==================*/
+ .about-area h3 {
+     margin-top: 15px;
+}
+ .single-team-box{
+     box-shadow: 0 0 5px #ddd;
+}
+ .single-team-box h4{
+     margin: 10px 0;
+}
+ .single-team-box p{
+     padding-bottom: 10px;
+}
+/*================ Video CSS ==================*/
+ .video-bg{
+     background-size: cover;
+     color: #fff;
+     padding: 70px 0;
+     background-color: #ccc;
+     position: relative;
+}
+ .video-bg:before, .broudcrumb-area:before{
+     position: absolute;
+     top: 0;
+     left: 0;
+     content: "";
+     height: 100%;
+     width: 100%;
+     background-color: #333;
+     opacity: .5;
+     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+/*================ Default Box Item CSS ==================*/
+ .single-box-thubm {
+     height: 220px;
+     background-size: cover;
+     background-color: #ddd;
+     background-position: center;
+}
+/*================ Service Area-2 CSS ==================*/
+ .single-service-2 {
+     background-color: #fff;
+     padding: 15px;
+     box-shadow: 0 0 5px #ddd;
+     margin-bottom: 30px;
+}
+ .single-service-2 h3 {
+     margin: 18px 0;
+}
+ .service-content{
+     padding: 5px;
+}
+ .service-img {
+}
+/*================ Tesimonial CSS ==================*/
+ .tesimonial-content{
+     font-size: 20px;
+}
+ .testimonial-meta{
+     text-align: center;
+     margin: 30px 0;
+}
+ .testimonial-meta h4{
+     margin: 8px 0;
+}
+ .owl-carousel .owl-item .testimonial-meta img{
+     display: inline-block;
+     width: auto;
+}
+ .owl-dot {
+     height: 10px;
+     width: 10px;
+     background: #333;
+     display: inline-block;
+     margin-left: 8px;
+     border-radius: 50%;
+}
+ .owl-dot:nth-child(1){
+     margin-left: -4px;
+}
+ .owl-dot.active {
+     background-color: #46be25;
+}
+/*================ Our Works CSS ==================*/
+ .single-work-item{
+     background-color: #fff;
+     position: relative;
+     margin-bottom: 100px;
+     text-align: center;
+}
+ .box-content {
+     position: absolute;
+     bottom: -70px;
+     width: 100%;
+     height: 70px;
+     background-color: rgba(255, 255, 255, 0.78);
+     box-shadow: 0 0 5px #ddd;
+     -webkit-transition: .3s;
+     transition: .3s;
+     overflow: hidden;
+}
+ .single-work-item:hover .box-content{
+     height: 100%;
+}
+ .single-work-item h4{
+     margin: 10px 0;
+}
+/*================ Blog Area CSS ==================*/
+ .single-blog-item{
+     margin-bottom: 30px;
+     display: block;
+}
+ .single-blog-item:hover .blog-content{
+     box-shadow: 0px 8px 15px #ddd;
+}
+ .blog-content{
+     padding: 40px 20px;
+     box-shadow: 0 0 5px #ddd;
+     max-height: 280px;
+     -webkit-transition: .3s;
+     transition: .3s;
+}
+ .blog-content h4{
+     line-height: 1.5;
+}
+ .blog-meta{
+     font-weight: 300;
+}
+ .single-blog > p, .single-blog > h3, .single-blog > img {
+     margin-bottom: 30px;
+}
+ .social-share {
+     border-top: 1px solid #eee;
+     border-bottom: 1px solid #eee;
+     padding: 30px 0;
+}
+ .social-share a {
+     display: inline-block;
+     height: 50px;
+     width: 120px;
+     text-align: center;
+     line-height: 52px;
+     color: #fff;
+     background-color: #275baa;
+     font-weight: 600;
+     border-radius: 30px;
+     margin-right: 10px;
+}
+ .social-share a.twitter {
+     background-color: #28c8f0;
+}
+ .social-share a.pinterest {
+     background-color: #d6061e;
+}
+ .author-box {
+     padding-top: 30px;
+     margin-bottom: 40px;
+     border-bottom: 1px solid #eee;
+}
+ .author-box img {
+     border-radius: 50%;
+     width: 100px;
+     max-height: 100px;
+}
+ .comment-item{
+     position: relative;
+     padding-left: 100px;
+}
+ .comment-item > img{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 80px;
+     max-height: 80px;
+}
+.comment-author-meta {
+    color: #999;
+}
+
+.comment-author-meta h4 {
+    color:  #333;
+}
+ .blog-area .widget {
+     border: 1px solid #ddd;
+     margin-bottom: 40px;
+}
+ .widget-title{
+     padding: 10px;
+     border-bottom: 1px solid #ddd;
+}
+ .comment-list li, .widget-recent-post li{
+     padding-bottom: 10px;
+     margin-bottom: 20px;
+     border-bottom: 1px solid #ddd;
+}
+ .widget-recent-post li{
+     border: none;
+     margin-left: 30px;
+     list-style: disc;
+}
+ .widget-recent-post li:hover a, .widget-category li:hover a{
+     color: #46be25;
+}
+ .widget-recent-post li:last-child{
+     border: 0px;
+}
+ .widget_search input, .widget_search button{
+     border: none;
+     padding: 15px;
+     background-color: transparent;
+}
+ .widget_search input {
+     width: 85%;
+}
+ .widget-category{
+     padding-bottom: 20px;
+}
+ .widget-category li{
+     list-style: square;
+     margin-left: 30px;
+}
+/*================ Broudcrumb CSS ==================*/
+ .broudcrumb-area{
+     height: 360px;
+     background-size: cover;
+     background-position: center;
+     background-color: #ddd;
+     padding-top: 130px;
+     position: relative;
+}
+ .broudcrumb-area, .broudcrumb-area a{
+     color: #fff;
+}
+/*================= error-404-area ===============*/
+.error-404-area {
+    font-size: 100px;
+    margin: 100px 0;
+}
+/*============== Contact Area CSS ================*/
+ .contact-form input:focus , .contact-form textarea:focus, .comment-form input:focus , .comment-form textarea:focus {
+     box-shadow: 0 5px 5px #f0f0f0;
+     border-color: #fbfbfb;
+}
+ .contact-info {
+     margin-bottom: 40px;
+}
+ .comments-area h3 {
+     margin-top: 10px;
+     margin-bottom: 40px;
+}
+ .comments-area input, .comments-area textarea {
+     width: 100%;
+     margin-bottom: 25px;
+}
+ .comments-area textarea {
+     border: 1px solid #f0f0f0;
+     height: 130px;
+     padding: 15px;
+}
+ .comments-area input[type=submit] {
+     width: auto;
+     margin-bottom: 0;
+}
+ .contact-line {
+     position: relative;
+     padding-left: 28px;
+}
+ .contact-icon {
+     position: absolute;
+     top: 0;
+     left: -10px;
+     font-size: 22px;
+     display: inline;
+     color: #46be25;
+     line-height: 50px;
+}
+ input[type=text], input[type=tel], input[type=email], input[type=passward], input[type=url], textarea, input[type=text] {
+     border: 1px solid #f0f0f0;
+     padding: 10px 15px;
+     outline: none;
+}
+ input[type="search"], button{
+     outline: none;
+}
+/*================ Footer CSS ==================*/
+ .footer-top-area{
+     background-color: #222;
+     color: #cbcbcb;
+}
+ .footer-top-area  h4{
+    color: #fff;
+ }
+ h4.footer-logo{
+    background-color: #46be25;
+    text-align: center;
+    padding: 8px;
+    color: #000;
+    font-weight: 400;
+} 
+ .footer-top-area a{
+     color: #cbcbcb;
+}
+ .footer-top-area a:hover{
+     color: #46be25;
+     text-decoration: underline;
+}
+ .footer-bottom-area{
+    background-color: #1d1d1d;
+    padding: 10px 0;
+    color: #fff;
+}
